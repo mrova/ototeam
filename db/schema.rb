@@ -14,46 +14,46 @@
 ActiveRecord::Schema.define(version: 20140227172907) do
 
   create_table "events", force: true do |t|
-    t.string "name"
+    t.string   "name"
     t.datetime "dt"
-    t.text "description"
+    t.text     "description"
     t.datetime "invite_dt_from"
     t.datetime "invite_dt_to"
-    t.integer "participant_min"
-    t.integer "participant_max"
-    t.text "answer_limit"
-    t.boolean "im_in"
-    t.boolean "publish_present"
+    t.integer  "participant_min"
+    t.integer  "participant_max"
+    t.text     "answer_limit"
+    t.boolean  "im_in"
+    t.boolean  "publish_present"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "firends", force: true do |t|
-    t.string "name"
-    t.string "email"
-    t.string "phone"
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "friends", force: true do |t|
-    t.string "name"
-    t.string "email"
-    t.string "phone"
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "groups", force: true do |t|
-    t.string "name"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "posts", force: true do |t|
-    t.string "name"
-    t.text "description"
-    t.boolean "active"
+    t.string   "name"
+    t.text     "description"
+    t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

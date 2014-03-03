@@ -3,7 +3,7 @@ class FriendsController < ApplicationController
 
   # GET /friends
   def index
-    @friends = Friend.all
+    @friends = Friend.search(params[:q]).result().page(params[:page])
   end
 
   # GET /friends/1
