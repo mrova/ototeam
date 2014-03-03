@@ -1,20 +1,14 @@
 GIT
-  remote: git://github.com/activerecord-hackery/polyamorous.git
-  revision: 3d45f4c9219b5e6626096d38aa04f401b7ce7808
-  specs:
-    polyamorous (0.6.4)
-      activerecord (>= 3.0)
-
-GIT
   remote: git://github.com/activerecord-hackery/ransack.git
-  revision: a7742fdc749c10713065c9d1a774ee9faa7eeef4
-  branch: rails-4.1
+  revision: 155dca814b4f09af4eb3715c8402522c32ab3daa
+  branch: rails-4
   specs:
     ransack (1.1.0)
       actionpack (>= 4.0)
       activerecord (>= 4.0)
       activesupport (>= 4.0)
       i18n
+      polyamorous (~> 0.6.0)
 
 GEM
   remote: https://rubygems.org/
@@ -138,6 +132,8 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.4)
     nio4r (1.0.0)
+    polyamorous (0.6.4)
+      activerecord (>= 3.0)
     polyglot (0.3.4)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -255,7 +251,6 @@ DEPENDENCIES
   haml-rails (~> 0.5.3)
   jquery-rails
   kaminari (~> 0.15.1)
-  polyamorous!
   pry (~> 0.9.12.6)
   pry-debugger (~> 0.2.2)
   quiet_assets (~> 1.0.2)

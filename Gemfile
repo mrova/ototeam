@@ -16,8 +16,7 @@ gem 'bootstrap-sass', '~> 3.1.0'
 gem 'haml-rails', '~> 0.5.3'
 gem 'simple_form', '~> 3.0.1'
 gem 'kaminari', '~> 0.15.1'
-gem "ransack", github: "activerecord-hackery/ransack", branch: "rails-4.1"
-gem "polyamorous", github: "activerecord-hackery/polyamorous"
+gem "ransack", github: "activerecord-hackery/ransack", branch: "rails-4"
 
 group :development do
   gem 'guard-rails', '~> 0.5.0'
