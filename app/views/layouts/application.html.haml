@@ -23,15 +23,18 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          = link_to "Project name", "#", :class => "navbar-brand"
+          = link_to t('project.name'), "#", :class => "navbar-brand"
         .collapse.navbar-collapse
           %ul.nav.navbar-nav
-            %li.active
-              %a{:href => "#"} Home
             %li
-              %a{:href => "#about"} About
+              =link_to t('events.label'), events_path
             %li
-              %a{:href => "#contact"} Contact
+              =link_to t('friends.label'), friends_path
+            %li
+              =link_to t('groups.label'), groups_path
+            %li
+              =link_to 'Logout', destroy_user_session_path, :method => :delete
+
     .container
       - flash.each do |name, msg|
         = content_tag :div, :class => "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable" do

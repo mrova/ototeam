@@ -19,15 +19,14 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+pl:
   events:
     create:
       success: "Event was successfully created."
-    label: "Events"
+    label: "Wydarzenia"
   friends:
-    label: "Friends"
+    label: "Znajomi"
   groups:
-    label: "Groups"
+    label: "Grupy"
   project:
-    name: "Project name"
+    name: "Nazwa projektu"

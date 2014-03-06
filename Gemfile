@@ -17,6 +17,9 @@ gem 'haml-rails', '~> 0.5.3'
 gem 'simple_form', '~> 3.0.1'
 gem 'kaminari', '~> 0.15.1'
 gem "ransack", github: "activerecord-hackery/ransack", branch: "rails-4"
+gem 'devise'
+gem 'rails-i18n', '~> 4.0.0'
+gem 'devise-i18n'
 
 group :development do
   gem 'guard-rails', '~> 0.5.0'

@@ -4,6 +4,17 @@
     New Friend
   %h1 Listing friends
 
+
+= search_form_for @q do |f|
+  = f.label :name_cont
+  = f.text_field :name_cont
+  = f.label :email_cont
+  = f.text_field :email_cont
+  = f.label :phone_cont
+  = f.text_field :phone_cont
+
+  = f.submit
+
 .table-responsive
   %table.table.table-striped.table-bordered.table-hover
     %thead
@@ -24,6 +35,5 @@
           %td= link_to 'Show', friend
           %td= link_to 'Edit', edit_friend_path(friend)
           %td= link_to 'Destroy', friend, :data => { confirm: 'Are you sure?' }, :method => :delete
-=paginate(@friends)
 
-=search_form_for @q do |friend_search|
+=paginate(@friends)
